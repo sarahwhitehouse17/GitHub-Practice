@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>My Weather Application</title>
+  </head>
+  <body>
+    <div class="border">
+      <form action="weather" class="form-container" id="search-form">
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Enter your city.."
+          class="input-box"
+          required
+        />
+        <input type="submit" value="Search" class="search" />
+      </form>
+      <section class="container">
+        <p>
+          <strong class="city" id="current-city">Madrid</strong>
+          <br />
+          <span class="date" id="date">Friday 13th September</span>
+          <br />
+          Sunny and light winds
+          <br />
+          Humidity: 32% Wind: 5km/h
+        </p>
+      </section>
+      <div class="current-temperature">
+        <span class="current-temperature-icon">☀️</span>
+        <span class="current-temperature-value" id="new-temperature">24</span>
+        <span class="current-temperature-unit">°C</span>
+      </div>
+
+      This project was coded by
+      <a href="#" target="_blank">Sarah Whitehouse</a> and is
+      <a href="#" target="_blank">on GitHub</a> and
+      <a href="#" target="_blank">hosted on Netlify</a>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
